@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    align-items: center;
+    background: #f7f7f7;
+}
+
+.logo {
+	position: absolute;
+    top: 15px;
+    right: 25px;
+    width: 220px;
+    height: 50px;
+    background: url(https://fs.getcourse.ru/fileservice/file/download/a/13641/sc/440/h/fbe465781fc68ff1dbc2f9b7deba4b30.png) center center / cover no-repeat;
+}
+
+.form-content {
+    background: #fff;
+	box-shadow: 0 6px 20px 0 rgb(0 0 0 / 13%);
+    padding: 30px 40px;
+    border-radius: 5px;
+}
+
+.prod {
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 1em;
+    color: #111; 
+    margin-bottom: 25px;
+}
+.prod .title {
+    font-size: 1.5em;
+	font-weight: 700;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+.prod .info {
+    font-size: 0.85em;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 0.35em;
+}
+.prod .price {
+    font-size: 1.5em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.prod__price .common {
+    font-size: 18px;
+    text-decoration: line-through;
+}
+
+.prod__price .sale {
+    color: #3840a3;
+}
+
+.field-content .f-input {
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 18px; 
+    font-weight: 500;
+    color: #111;
+    border: none;
+	border-bottom: 2px solid #000;
+    outline: none;
+}
+
+.f-input::-webkit-input-placeholder {font-family: 'Open Sans', sans-serif; font-size: 18px; color: #111;}
+.f-input::-moz-placeholder {font-family: 'Open Sans', sans-serif; font-size: 18px; color: #111;}
+.f-input:-moz-placeholder {font-family: 'Open Sans', sans-serif; font-size: 18px; color: #111;}
+.f-input:-ms-input-placeholder {font-family: 'Open Sans', sans-serif; font-size: 18px; color: #111;}
+
+.part-button .f-btn {
+    font-family: 'Open Sans', sans-serif !important; 
+    font-size: 24px !important;
+    font-weight: 600 !important;
+	background: linear-gradient(107.45deg, #FFC737 0%, #FFC737 100%);
+	box-shadow: 0px 4px 10px rgb(0 0 0 / 20%);
+    padding: 15px;
+    border-radius: 5px;
+	color: #000;
+    text-transform: uppercase;
+}
+
+.part-button .f-btn:hover {
+	color: #fff;
+}
+
+@media screen and (max-width: 480px) {
+    .prod, .prod__price {font-size: 22px;}
+    .field-content .f-input {font-size: 16px;}
+    .part-button .f-btn {font-size: 20px !important;}
+    .logo {width: 175px; height: 40px;}
+}
