@@ -2,32 +2,35 @@ const p = {
     "45": {
         "ru" : {
             "pack": [5950, 10400, 15150, 26700, 47400],
-            "abon": [],
+            "abon": []
         },
         "en" : {
             "pack": [12000, 23000, 32250, 61200, 117300],
             "abon": []
-        }
+        },
+        "crt": [5450, 9400, 13650, 23700, 41400];
     },
     "60": {
         "ru" : {
             "pack": [6450, 11400, 16650, 29700, 53400],
-            "abon": [],
+            "abon": []
         },
         "en" : {
             "pack": [14250, 27000, 38250, 72000, 138000],
             "abon": []
-        }
+        },
+        "crt": [5950, 10400, 15150, 26700, 47400]
     },
     "90": {
         "ru" : {
             "pack": [9675, 17100, 24975, 44550, 80100],
-            "abon": [],
+            "abon": []
         },
         "en" : {
             "pack": [21375, 40500, 57375, 108000, 207000],
             "abon": []
-        }
+        },
+        "crt": [8925, 15600, 22725, 40050, 71100]
     }
 };
 
@@ -55,7 +58,7 @@ $container.insertAdjacentHTML('afterBegin', `<div class='prod'>
     <p class='info'>Продолжительность урока: ${h} минут</p>
 </div>`);
 
-const price = (!window.location.href.includes('crt')) ? p[h][g][f][index] : p[h][g][f][index] - 100 * j;
+const price = (!window.location.href.includes('crt')) ? p[h][g][f][index] : p[h]['crt'][index];
 
 $btn.innerText = 'Оплатить';
 $btn.parentElement.insertAdjacentHTML('beforebegin', `<div class='prod'><div class='price'>К оплате: ${price} ₽</div></div>`);
