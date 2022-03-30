@@ -30,6 +30,8 @@ const p = {
         }
     }
 };
+console.log('Текущие клиенты')
+console.log(window.location.href.includes('crt'))
 
 document.title = 'Уроки с преподавателем';
 
@@ -49,8 +51,8 @@ document.getElementsByName('formParams[phone]')[0].placeholder = 'Телефон
 
 $container.insertAdjacentHTML('afterBegin', `<div class='prod'>
     <p class='title'>Уроки с преподавателем</p>
-	<p class='info'>Тип: ${type}</p>
-	<p class='info'>Преподаватель: ${teacher}</p>
+    <p class='info'>Тип: ${type}</p>
+    <p class='info'>Преподаватель: ${teacher}</p>
     <p class='info'>Количество уроков: ${j}</p>
     <p class='info'>Продолжительность урока: ${h} минут</p>
 </div>`);
