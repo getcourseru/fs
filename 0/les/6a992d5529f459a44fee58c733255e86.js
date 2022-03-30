@@ -55,7 +55,7 @@ $container.insertAdjacentHTML('afterBegin', `<div class='prod'>
     <p class='info'>Продолжительность урока: ${h} минут</p>
 </div>`);
 
-const price = (!window.location.href.includes('crt')) : p[h][g][f][index] ? p[h][g][f][index] - 100 * j;
+const price = (!window.location.href.includes('crt')) ? p[h][g][f][index] : p[h][g][f][index] - 100 * j;
 
 $btn.innerText = 'Оплатить';
 $btn.parentElement.insertAdjacentHTML('beforebegin', `<div class='prod'><div class='price'>К оплате: ${price} ₽</div></div>`);
