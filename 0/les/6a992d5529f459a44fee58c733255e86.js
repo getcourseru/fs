@@ -2,7 +2,7 @@ const p = {
     "45": {
         "ru" : {
             "pack": [5950, 10400, 15150, 26700, 47400],
-            "abon": []
+            "abon": [],
         },
         "en" : {
             "pack": [12000, 23000, 32250, 61200, 117300],
@@ -12,7 +12,7 @@ const p = {
     "60": {
         "ru" : {
             "pack": [6450, 11400, 16650, 29700, 53400],
-            "abon": []
+            "abon": [],
         },
         "en" : {
             "pack": [14250, 27000, 38250, 72000, 138000],
@@ -22,7 +22,7 @@ const p = {
     "90": {
         "ru" : {
             "pack": [9675, 17100, 24975, 44550, 80100],
-            "abon": []
+            "abon": [],
         },
         "en" : {
             "pack": [21375, 40500, 57375, 108000, 207000],
@@ -30,8 +30,6 @@ const p = {
         }
     }
 };
-console.log('Текущие клиенты')
-console.log(window.location.href.includes('crt'))
 
 document.title = 'Уроки с преподавателем';
 
@@ -57,8 +55,10 @@ $container.insertAdjacentHTML('afterBegin', `<div class='prod'>
     <p class='info'>Продолжительность урока: ${h} минут</p>
 </div>`);
 
+const price = (!window.location.href.includes('crt')) : p[h][g][f][index] ? p[h][g][f][index] - 100 * j;
+
 $btn.innerText = 'Оплатить';
-$btn.parentElement.insertAdjacentHTML('beforebegin', `<div class='prod'><div class='price'>К оплате: ${p[h][g][f][index]} ₽</div></div>`);
+$btn.parentElement.insertAdjacentHTML('beforebegin', `<div class='prod'><div class='price'>К оплате: ${price} ₽</div></div>`);
 
 const $logo = document.createElement('div');
 $logo.classList.add('logo');
