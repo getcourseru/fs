@@ -1,4 +1,4 @@
-const p = {
+/*const p = {
     "45": {
         "ru" : {
             "pack": [5950, 10400, 15150, 26700, 47400],
@@ -65,4 +65,4 @@ $btn.parentElement.insertAdjacentHTML('beforebegin', `<div class='prod'><div cla
 
 const $logo = document.createElement('div');
 $logo.classList.add('logo');
-$body.append($logo);
+$body.append($logo);*/
