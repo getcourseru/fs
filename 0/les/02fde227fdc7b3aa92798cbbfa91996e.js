@@ -43,7 +43,7 @@ const $body = document.getElementsByTagName('body')[0];
 const NUM = [8, 12, 16, 24, 36, 48];
 const [f, g, h, j] = String(window.location.href.match(/\w{4}\/\w{2}\/\d{2}\/\d{1,2}/g)).split('/'); //pack/ru/60/5
 const index = NUM.indexOf(Number(j));
-const dur = (j > 16) ? '1 месяц' : '3 месяца'
+const dur = (j > 16) ? '3 месяца' : '1 месяц'
 const type = (f === 'pack') ? 'пакет (не ограничен временными сроками)' : `абонемент на ${dur}`;
 const teacher = (g === 'ru') ? 'русскоязычный' : 'носитель';
 
