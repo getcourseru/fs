@@ -1,7 +1,18 @@
 const p = {
+    "30": {
+        "ru" : {
+            "pack": [3450, 5900, 8550, 14700, 23400, 32400],
+            "abon": []
+        },
+        "en" : {
+            "pack": [12000, 23000, 32250, 61200, 117300],
+            "abon": []
+        },
+        "crt": [5450, 9400, 13650, 23700, 41400]
+    },
     "45": {
         "ru" : {
-            "pack": [4950, 8400, 12150, 20700, 35400],
+            "pack": [4950, 8400, 12150, 20700, 35400, 50400],
             "abon": []
         },
         "en" : {
@@ -12,7 +23,7 @@ const p = {
     },
     "60": {
         "ru" : {
-            "pack": [5450, 9400, 13650, 23700, 41400],
+            "pack": [5450, 9400, 13650, 23700, 41400, 59400],
             "abon": []
         },
         "en" : {
@@ -40,7 +51,7 @@ const $container = document.querySelector('.form-content .builder');
 const $btn = document.querySelector('.form-content .builder .f-btn');
 const $body = document.getElementsByTagName('body')[0];
 
-const NUM = [5, 10, 15, 30, 60];
+const NUM = [5, 10, 15, 30, 60, 90];
 const [f, g, h, j] = String(window.location.href.match(/\w{4}\/\w{2}\/\d{2}\/\d{1,2}/g)).split('/');
 const index = NUM.indexOf(Number(j));
 const type = (f === 'pack') ? 'пакет (не ограничен временными сроками)' : 'абонемент';
