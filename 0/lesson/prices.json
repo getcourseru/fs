@@ -1,0 +1,118 @@
+[
+    {
+        "lessonDuration": 30,
+        "teacherKind": "ru",
+        "packs": [
+            {
+                "lessonCount": 5,
+                "price": 3450
+            },
+            {
+                "lessonCount": 10,
+                "price": 5900
+            },
+            {
+                "lessonCount": 15,
+                "price": 8550
+            },
+            {
+                "lessonCount": 30,
+                "price": 14700
+            },
+            {
+                "lessonCount": 60,
+                "price": 23400
+            },
+            {
+                "lessonCount": 90,
+                "price": 32400
+            }
+        ]
+    },
+    {
+        "lessonDuration": 45,
+        "teacherKind": "ru",
+        "packs": [
+            {
+                "lessonCount": 5,
+                "price": 5450
+            },
+            {
+                "lessonCount": 10,
+                "price": 9400
+            },
+            {
+                "lessonCount": 15,
+                "price": 13650
+            },
+            {
+                "lessonCount": 30,
+                "price": 23700
+            },
+            {
+                "lessonCount": 60,
+                "price": 41400
+            },
+            {
+                "lessonCount": 90,
+                "price": 50400
+            }
+        ]
+    },
+    {
+        "lessonDuration": 60,
+        "teacherKind": "ru",
+        "packs": [
+            {
+                "lessonCount": 5,
+                "price": 5950
+            },
+            {
+                "lessonCount": 10,
+                "price": 10400
+            },
+            {
+                "lessonCount": 15,
+                "price": 15150
+            },
+            {
+                "lessonCount": 30,
+                "price": 26700
+            },
+            {
+                "lessonCount": 60,
+                "price": 47400
+            },
+            {
+                "lessonCount": 90,
+                "price": 59400
+            }
+        ]
+    },
+    {
+        "lessonDuration": 90,
+        "teacherKind": "ru",
+        "packs": [
+            {
+                "lessonCount": 5,
+                "price": 9675
+            },
+            {
+                "lessonCount": 10,
+                "price": 17100
+            },
+            {
+                "lessonCount": 15,
+                "price": 24975
+            },
+            {
+                "lessonCount": 30,
+                "price": 44550
+            },
+            {
+                "lessonCount": 60,
+                "price": 80100
+            }
+        ]
+    }
+]
