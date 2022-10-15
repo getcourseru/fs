@@ -14,7 +14,11 @@ fetch(`https://getcourseru.github.io/fs/lesson/prices.json`)
     .then((price) => renderForm(price, options))
 
 function getPrice(data) {
+    console.log(data)
+    
     const options = parseURL();
+    console.log(options)
+    
     const [packageKind, teacherKind, lessonDuration, lessonCount] = options;
     const [a, ] = data.filter(item => item.lessonDuration === lessonDuration && item.teacherKind === teacherKind);
     let b;
