@@ -57,6 +57,32 @@
                 "lessonCount": 90,
                 "price": 50400
             }
+        ],
+        "subscriptions": [
+            {
+                "lessonCount": 8,
+                "price": 8160
+            },
+            {
+                "lessonCount": 12,
+                "price": 11880
+            },
+            {
+                "lessonCount": 16,
+                "price": 15520
+            },
+            {
+                "lessonCount": 24,
+                "price": 21360
+            },
+            {
+                "lessonCount": 36,
+                "price": 31320
+            },
+            {
+                "lessonCount": 48,
+                "price": 40800
+            }
         ]
     },
     {
@@ -87,6 +113,38 @@
                 "lessonCount": 90,
                 "price": 59400
             }
+        ],
+        "subscriptions": [
+            {
+                "lessonCount": 8,
+                "price": 8960
+            },
+            {
+                "lessonCount": 12,
+                "price": 13080
+            },
+            {
+                "lessonCount": 16,
+                "price": 17120
+            },
+            {
+                "lessonCount": 24,
+                "price": 23760
+            },
+            {
+                "lessonCount": 36,
+                "price": 34920
+            },
+            {
+                "lessonCount": 48,
+                "price": 45600
+            }
+        ],
+        "groups": [
+            {
+                "lessonCount": 24,
+                "price": 9000
+            }
         ]
     },
     {
@@ -112,6 +170,32 @@
             {
                 "lessonCount": 60,
                 "price": 80100
+            }
+        ],
+        "subscriptions": [
+            {
+                "lessonCount": 8,
+                "price": 13440
+            },
+            {
+                "lessonCount": 12,
+                "price": 19620
+            },
+            {
+                "lessonCount": 16,
+                "price": 25680
+            },
+            {
+                "lessonCount": 24,
+                "price": 35640
+            },
+            {
+                "lessonCount": 36,
+                "price": 52380
+            },
+            {
+                "lessonCount": 48,
+                "price": 68400
             }
         ]
     },
