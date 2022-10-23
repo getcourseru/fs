@@ -17,23 +17,23 @@ function getPrice(data) {
     console.log(data)
     
     const options = parseURL();
-    const [packageKind, teacherKind, +lessonDuration, +lessonCount] = options;
+    const [packageKind, teacherKind, lessonDuration, lessonCount] = options;
     
-    const [a,] = data.filter(item => item.lessonDuration === lessonDuration && item.teacherKind === teacherKind);
+    const [a,] = data.filter(item => item.lessonDuration == lessonDuration && item.teacherKind === teacherKind);
     console.log(a)
     
     let b;
     switch (packageKind) {
         case `pack`:
-            [b,] = a.packages.filter(item => item.lessonCount === lessonCount)
+            [b,] = a.packages.filter(item => item.lessonCount == lessonCount)
             document.title = 'Уроки с преподавателем';
             break
         case `abon`:
-            [b,] = a.subscriptions.filter(item => item.lessonCount === lessonCount)
+            [b,] = a.subscriptions.filter(item => item.lessonCount == lessonCount)
             document.title = 'Уроки с преподавателем';
             break
         case `group`:
-            [b,] = a.groups.filter(item => item.lessonCount === lessonCount)
+            [b,] = a.groups.filter(item => item.lessonCount == lessonCount)
             document.title = 'Уроки с преподавателем в группе';
             break
     };
@@ -50,7 +50,7 @@ function renderForm(price, options) {
     $container.insertAdjacentHTML('afterbegin', 
         `<div class='prod'>
             <p class='title'>${packageKind !== `group` ? `Уроки с преподавателем` : `Уроки с преподавателем в группе`}</p>
-            <p class='info'>Тип: ${packageKind === `pack` ? `пакет (не ограничен временными сроками)` : lessonCount > 16 ? `абонемент на 3 месяца` : `абонемент на 1 месяц`}</p>
+            <p class='info'>Тип: ${packageKind === `pack` ? `пакет (не ограничен временными сроками)` : +lessonCount > 16 ? `абонемент на 3 месяца` : `абонемент на 1 месяц`}</p>
             <p class='info'>Преподаватель: ${teacherKind === `ru` ? `русскоязычный` : `носитель`}</p> 
             <p class='info'>Количество уроков: ${lessonCount}</p>
             <p class='info'>Продолжительность урока: ${lessonDuration} минут</p>
