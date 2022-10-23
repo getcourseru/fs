@@ -37,6 +37,7 @@ function getPrice(data) {
 };
 
 function renderForm(price, options) {
+    console.log(options)
     const [packageKind, teacherKind, lessonDuration, lessonCount] = options;
     const $container = document.querySelector('.form-content .builder');
     const $btn = $container.querySelector('.f-btn');
