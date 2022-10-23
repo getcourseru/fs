@@ -26,7 +26,9 @@ function getPrice(data) {
     console.log(`lessonDuration = ${lessonDuration}`)
     console.log(`lessonCount = ${lessonCount}`)
     
-    const a = data.filter(item => item.lessonDuration === lessonDuration && item.teacherKind === teacherKind);
+    const a = data.filter(function(item) {
+        return item.lessonDuration === lessonDuration && item.teacherKind === teacherKind
+    });
     
     console.log(a)
     
