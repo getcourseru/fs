@@ -8,5 +8,5 @@ export function parseURL() {
         lessonCount = 5, 10, 15, 30, 60, 90 || 8, 12, 16, 24, 36, 48
     */
 
-    return [`group`, `ru`, 60, 24]
+    console.log('Импорт работает')
 }
