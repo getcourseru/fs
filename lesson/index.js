@@ -20,7 +20,13 @@ function getPrice(data) {
     console.log(options)
     
     const [packageKind, teacherKind, lessonDuration, lessonCount] = options;
-    const [a, ] = data.filter(item => item.lessonDuration === lessonDuration && item.teacherKind === teacherKind);
+    
+    console.log(`packageKind = ${packageKind}`)
+    console.log(`teacherKind = ${teacherKind}`)
+    console.log(`lessonDuration = ${lessonDuration}`)
+    console.log(`lessonCount = ${lessonCount}`)
+    
+    const [a, ] = data.filter(item => item.lessonDuration === lessonDuration /*&& item.teacherKind === teacherKind*/);
     
     console.log(a)
     
