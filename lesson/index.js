@@ -20,6 +20,7 @@ function getPrice(data) {
     const [packageKind, teacherKind, lessonDuration, lessonCount] = options;
     
     const [a,] = data.filter(item => item.lessonDuration == lessonDuration && item.teacherKind == teacherKind);
+    console.log(a)
     
     let b;
     switch (packageKind) {
@@ -36,6 +37,7 @@ function getPrice(data) {
             document.title = 'Уроки с преподавателем в группе';
             break
     };
+    console.log(b)
     
     return b.price, options;
 };
