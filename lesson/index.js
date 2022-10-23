@@ -14,14 +14,9 @@ fetch(`https://getcourseru.github.io/fs/lesson/prices.json`)
     .then((price, options) => renderForm(price, options))
 
 function getPrice(data) {
-    console.log(data)
-    
-    const options = parseURL();
-    const [packageKind, teacherKind, lessonDuration, lessonCount] = options;
-    
+    const [packageKind, teacherKind, lessonDuration, lessonCount] = parseURL();
     const [a,] = data.filter(item => item.lessonDuration == lessonDuration && item.teacherKind === teacherKind);
-    console.log(a)
-    
+
     let b;
     switch (packageKind) {
         case `pack`:
@@ -37,9 +32,8 @@ function getPrice(data) {
             document.title = 'Уроки с преподавателем в группе';
             break
     };
-    console.log(b)
     
-    return b.price, options;
+    return b.price, [packageKind, teacherKind, lessonDuration, lessonCount];
 };
 
 function renderForm(price, options) {
