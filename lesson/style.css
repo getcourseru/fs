@@ -58,10 +58,14 @@ body {
   margin-bottom: 0.35em;
 }
 
-.prod .price {
+.price {
   font-size: 1.5em;
   font-weight: 700;
   text-align: center;
+}
+
+.price #price {
+  margin: 0 10px;
 }
 
 .field-content .f-input {
