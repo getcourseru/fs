@@ -11,7 +11,7 @@ fetch(`https://getcourseru.github.io/fs/lesson/prices.json`)
 fetch(`https://getcourseru.github.io/fs/lesson/prices.json`)
     .then((response) => response.json())
     .then((data) => getPrice(data))
-    .then((price, options) => renderForm(price, options))
+    .then((price) => renderForm(price))
 
 function getPrice(data) {
     const [packageKind, teacherKind, lessonDuration, lessonCount] = parseURL();
@@ -33,12 +33,11 @@ function getPrice(data) {
             break
     };
     
-    return b.price, [packageKind, teacherKind, lessonDuration, lessonCount];
+    return b.price;
 };
 
 function renderForm(price, options) {
-    console.log(options)
-    const [packageKind, teacherKind, lessonDuration, lessonCount] = options;
+    const [packageKind, teacherKind, lessonDuration, lessonCount] = parseURL();
     const $container = document.querySelector('.form-content .builder');
     const $btn = $container.querySelector('.f-btn');
 
