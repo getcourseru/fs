@@ -21,6 +21,9 @@ function getPrice(data) {
     
     const [packageKind, teacherKind, lessonDuration, lessonCount] = options;
     const [a, ] = data.filter(item => item.lessonDuration === lessonDuration && item.teacherKind === teacherKind);
+    
+    console.log(a)
+    
     let b;
     switch (packageKind) {
         case `pack`:
