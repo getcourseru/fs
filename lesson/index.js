@@ -11,7 +11,7 @@ fetch(`https://getcourseru.github.io/fs/lesson/prices.json`)
 fetch(`https://getcourseru.github.io/fs/lesson/prices.json`)
     .then((response) => response.json())
     .then((data) => getPrice(data))
-    .then((price) => renderForm(price, options))
+    .then((price, options) => renderForm(price, options))
 
 function getPrice(data) {
     console.log(data)
