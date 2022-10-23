@@ -59,8 +59,11 @@ body {
 }
 
 .price {
+  font-family: "Open Sans", sans-serif !important;
   font-size: 1.5em;
   font-weight: 700;
+  color: #111111;
+  margin-bottom: 25px;
   text-align: center;
 }
 
