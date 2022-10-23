@@ -17,7 +17,7 @@ function getPrice(data) {
     console.log(data)
     
     const options = parseURL();
-    const [packageKind, teacherKind, lessonDuration, +lessonCount] = options;
+    const [packageKind, teacherKind, +lessonDuration, +lessonCount] = options;
     
     const [a,] = data.filter(item => item.lessonDuration === lessonDuration && item.teacherKind === teacherKind);
     console.log(a)
