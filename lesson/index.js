@@ -24,15 +24,15 @@ function getPrice(data) {
     let b;
     switch (packageKind) {
         case `pack`:
-            [b, ] = a.packages.filter(item => item.lessonCount === lessonCount)
+            [b,] = a.packages.filter(item => item.lessonCount === lessonCount)
             document.title = 'Уроки с преподавателем';
             break
         case `abon`:
-            [b, ] = a.subscriptions.filter(item => item.lessonCount === lessonCount)
+            [b,] = a.subscriptions.filter(item => item.lessonCount === lessonCount)
             document.title = 'Уроки с преподавателем';
             break
         case `group`:
-            [b, ] = a.groups.filter(item => item.lessonCount === lessonCount)
+            [b,] = a.groups.filter(item => item.lessonCount === lessonCount)
             document.title = 'Уроки с преподавателем в группе';
             break
     };
