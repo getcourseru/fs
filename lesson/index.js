@@ -36,7 +36,7 @@ function getPrice(data) {
     return b.price;
 };
 
-function renderForm(price, options) {
+function renderForm(price) {
     const [packageKind, teacherKind, lessonDuration, lessonCount] = parseURL();
     const $container = document.querySelector('.form-content .builder');
     const $btn = $container.querySelector('.f-btn');
