@@ -58,6 +58,8 @@ function renderForm(price, options) {
     );
 
     addPlaceholder();
+    
+    window.localStorage.setItem('lessonPrice', price)
 }
 
 function addPlaceholder() {
