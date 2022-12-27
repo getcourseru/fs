@@ -94,7 +94,8 @@
         "packages": [
             {
                 "lessonCount": 5,
-                "price": 5950
+                "price": 5950,
+                "lessonPrice": 1290
             },
             {
                 "lessonCount": 10,
