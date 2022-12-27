@@ -2,6 +2,7 @@
     {
         "lessonDuration": 30,
         "teacherKind": "ru",
+        "course": "regular",
         "packages": [
             {
                 "lessonCount": 5,
@@ -32,6 +33,7 @@
     {
         "lessonDuration": 45,
         "teacherKind": "ru",
+        "course": "regular",
         "packages": [
             {
                 "lessonCount": 5,
@@ -88,6 +90,7 @@
     {
         "lessonDuration": 60,
         "teacherKind": "ru",
+        "course": "regular",
         "packages": [
             {
                 "lessonCount": 5,
@@ -148,8 +151,40 @@
         ]
     },
     {
+        "lessonDuration": 60,
+        "teacherKind": "ru",
+        "course": "business",
+        "packages": [
+            {
+                "lessonCount": 5,
+                "price": 8925
+            },
+            {
+                "lessonCount": 10,
+                "price": 15600
+            },
+            {
+                "lessonCount": 15,
+                "price": 22725
+            },
+            {
+                "lessonCount": 30,
+                "price": 40050
+            },
+            {
+                "lessonCount": 60,
+                "price": 71100
+            },
+            {
+                "lessonCount": 90,
+                "price": 99900
+            }
+        ]
+    },
+    {
         "lessonDuration": 90,
         "teacherKind": "ru",
+        "course": "regular",
         "packages": [
             {
                 "lessonCount": 5,
@@ -200,8 +235,36 @@
         ]
     },
     {
+        "lessonDuration": 90,
+        "teacherKind": "ru",
+        "course": "business",
+        "packages": [
+            {
+                "lessonCount": 5,
+                "price": 14515
+            },
+            {
+                "lessonCount": 10,
+                "price": 25650
+            },
+            {
+                "lessonCount": 15,
+                "price": 37465
+            },
+            {
+                "lessonCount": 30,
+                "price": 66825
+            },
+            {
+                "lessonCount": 60,
+                "price": 120150
+            }
+        ]
+    },
+    {
         "lessonDuration": 45,
         "teacherKind": "en",
+        "course": "regular",
         "packages": [
             {
                 "lessonCount": 5,
@@ -228,6 +291,7 @@
     {
         "lessonDuration": 60,
         "teacherKind": "en",
+        "course": "regular",
         "packages": [
             {
                 "lessonCount": 5,
@@ -254,6 +318,7 @@
     {
         "lessonDuration": 90,
         "teacherKind": "en",
+        "course": "regular",
         "packages": [
             {
                 "lessonCount": 5,
