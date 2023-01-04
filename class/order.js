@@ -14,6 +14,8 @@ function parseURL() {
     for (let [name, value] of searchParams) {
         PARAMS[`${name}`] = value
     }
+	
+    //?lessonDuration=60&teacherType=ru&packageType=pkgs&courseType=std&lessonCount=5
 }
 
 const { lessonDuration, teacherType, packageType, courseType, lessonCount } = PARAMS
