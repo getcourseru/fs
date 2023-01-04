@@ -73,7 +73,6 @@ function hideForm() {
     const $parentForm = $form.parentNode.parentNode
     $parentForm.insertAdjacentHTML('afterbegin', `<div class='notification'>
         <div class='notification__container'>
-            <div class='row'>
             <div class='notification__image'>
                 <img src='https://fs.getcourse.ru/fileservice/file/download/a/13641/sc/341/h/43d1d1bdc86e74ead187f37ae1adf836.png'>
             </div>
@@ -81,7 +80,6 @@ function hideForm() {
                 <p>Так-с, кажется, что-то пошло не так...</p>
                 <p>Вернись на шаг назад и попробуй выбрать предложение</p>
                 <a href='https://englishshow.ru/ceny'>Вернуться</a>
-            </div>
             </div>
         </div>
     </div>`)
