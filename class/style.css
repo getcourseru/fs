@@ -102,4 +102,55 @@ body {
 .part-button .f-btn:hover {
   color: #ffffff !important;
 }
-/*# sourceMappingURL=style.css.map */
+
+.notification {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.notification .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.notification__container {
+  width: 800px;
+}
+
+.notification__image {
+  width: 300px;
+}
+
+.notification__image img {
+  max-width: 100%;
+}
+
+.notification__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.25em;
+}
+
+.notification__content a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 1.5em;
+  font-weight: 600;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #111111;
+  color: #ffffff;
+  border-radius: 5px;
+}
