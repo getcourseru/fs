@@ -5,11 +5,11 @@ function parseURL() {
     const url = new URL(document.location.href)
     const { pathname, searchParams } = url
     
-    /*if (pathname.split(`/`).includes('editor')) {
+    if (pathname.split(`/`).includes('editor')) {
     	const $pg = document.querySelector('.lite-page')
 	$pg.innerHTML = ''
 	return
-    }*/
+    }
     
     for (let [name, value] of searchParams) {
         PARAMS[`${name}`] = value
@@ -26,7 +26,7 @@ if (lessonDuration && teacherType && packageType && courseType && courseType) {
         .then(data => getOffer(data))
     
 } else {
-	hideForm()
+	showNotification()
 }
 
 function getOffer(data) {
@@ -44,7 +44,7 @@ function getOffer(data) {
 
         renderForm(offer)
     } else {
-    	hideForm()
+    	showNotification()
     }
 }
 
@@ -72,7 +72,12 @@ function renderForm(offer) {
     );
 }
 
-function hideForm() {
+function showNotification() {
+
+    if (!document.querySelector('form')) {
+    	return
+    }
+	
     const $form = document.querySelector('form')
     $form.style.display = 'none'
 
