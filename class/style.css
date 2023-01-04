@@ -16,13 +16,85 @@ body {
   width: 100%;
   height: 100vh;
   min-height: 100vh;
+  font-family: "Open Sans", sans-serif !important;
 }
 
 .form-content {
+  font-size: 16px;
   background: #ffffff;
   -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
           box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 1.5em 2em;
   border-radius: 5px;
+}
+
+.prod__title {
+  font-size: 1.5em;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.75em;
+}
+
+.prod__desc {
+  font-size: 0.85em;
+  font-weight: 500;
+  color: #666;
+}
+
+.prod__desc p {
+  margin-bottom: 0.35em;
+}
+
+.price {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #111111;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.price #price {
+  margin: 0 0.5em;
+}
+
+.field-content .f-input {
+  font-weight: 500;
+  color: #111111;
+  border: none;
+  border-bottom: 2px solid #111111;
+  outline: none;
+}
+
+.field-content .f-input::-webkit-input-placeholder {
+  font-size: 1em;
+  color: #111111;
+}
+
+.field-content .f-input:-ms-input-placeholder {
+  font-size: 1em;
+  color: #111111;
+}
+
+.field-content .f-input::-ms-input-placeholder {
+  font-size: 1em;
+  color: #111111;
+}
+
+.field-content .f-input::placeholder {
+  font-size: 1em;
+  color: #111111;
+}
+
+.part-button .f-btn {
+  font-weight: 600 !important;
+  background: linear-gradient(107.45deg, #FFC737 0%, #FFC737 100%);
+  padding: 1em;
+  border-radius: 5px;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.part-button .f-btn:hover {
+  color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
