@@ -24,21 +24,21 @@ body {
   background: #ffffff;
   -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
           box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  padding: 1.5em 2em;
+  padding: 2em 2.5em;
   border-radius: 5px;
 }
 
 .prod__title {
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 0.75em;
+  margin-bottom: 1em;
 }
 
 .prod__desc {
-  font-size: 0.85em;
+  font-size: 1.125em;
   font-weight: 500;
-  color: #666;
+  color: #666666;
 }
 
 .prod__desc p {
@@ -46,7 +46,7 @@ body {
 }
 
 .price {
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: 700;
   color: #111111;
   margin-bottom: 1em;
@@ -58,6 +58,7 @@ body {
 }
 
 .field-content .f-input {
+  font-size: 1.125em;
   font-weight: 500;
   color: #111111;
   border: none;
@@ -90,11 +91,11 @@ body {
   background: linear-gradient(107.45deg, #FFC737 0%, #FFC737 100%);
   padding: 1em;
   border-radius: 5px;
-  color: #111111;
+  color: #111111 !important;
   text-transform: uppercase;
 }
 
 .part-button .f-btn:hover {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 /*# sourceMappingURL=style.css.map */
