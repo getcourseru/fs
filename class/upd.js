@@ -54,7 +54,7 @@ function renderForm(offer) {
                 <p>Курс: ${params.courseType === `std` ? `обычный` : `бизнес`}</p>
                 <p>Тип: ${params.packageType === `pkgs` ? `пакет (не ограничен временными сроками)` : params.lessonCount > 16 ? `абонемент на 3 месяца` : `абонемент на 1 месяц`}</p>
                 <p>Преподаватель: ${params.teacherType === `ru` ? `русскоязычный` : `носитель`}</p> 
-                ${params.lessonCount ? <p>Количество уроков: ${params.lessonCount}</p> : ``}
+                ${params.lessonCount ? `<p>Количество уроков: ${params.lessonCount}</p>` : ``}
                 <p>Продолжительность урока: ${params.lessonDuration} минут</p>
             <div>
         </div>`);
