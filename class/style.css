@@ -32,7 +32,7 @@ body {
   font-size: 2em;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 1em;
+  margin-bottom: 1em !important;
 }
 
 .prod__desc {
@@ -58,9 +58,11 @@ body {
 }
 
 .field-content .f-input {
+  font-family: "Open Sans", sans-serif !important;
   font-size: 1.125em;
   font-weight: 500;
   color: #111111;
+  margin-bottom: 1.5em;
   border: none;
   border-bottom: 2px solid #111111;
   outline: none;
@@ -87,6 +89,7 @@ body {
 }
 
 .part-button .f-btn {
+  font-size: 1.5em;
   font-weight: 600 !important;
   background: linear-gradient(107.45deg, #FFC737 0%, #FFC737 100%);
   padding: 1em;
