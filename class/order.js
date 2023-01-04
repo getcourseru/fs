@@ -3,7 +3,8 @@ parseURL()
 
 function parseURL() {
     const url = new URL(document.location.href)
-    const { searchParams } = url
+    const { pathname, searchParams } = url
+    console.log(pathname)
     
     for (let [name, value] of searchParams) {
         PARAMS[`${name}`] = value
@@ -71,16 +72,17 @@ function hideForm() {
     $form.style.display = 'none'
 
     const $parentForm = $form.parentNode.parentNode
-    $parentForm.insertAdjacentHTML('afterbegin', `<div class='notification'>
-        <div class='notification__container'>
-            <div class='notification__image'>
-                <img src='https://fs.getcourse.ru/fileservice/file/download/a/13641/sc/341/h/43d1d1bdc86e74ead187f37ae1adf836.png'>
+    $parentForm.insertAdjacentHTML('afterbegin', 
+        `<div class='nt'>
+            <div class='nt__container'>
+                <div class='nt__image'>
+                    <img src='https://fs.getcourse.ru/fileservice/file/download/a/13641/sc/341/h/43d1d1bdc86e74ead187f37ae1adf836.png'>
+                </div>
+                <div class='nt__content'>
+                    <p>Так-с, кажется, что-то пошло не так...</p>
+                    <p>Вернись на шаг назад и попробуй выбрать предложение</p>
+                    <a href='https://englishshow.ru/ceny'>Вернуться</a>
+                </div>
             </div>
-            <div class='notification__content'>
-                <p>Так-с, кажется, что-то пошло не так...</p>
-                <p>Вернись на шаг назад и попробуй выбрать предложение</p>
-                <a href='https://englishshow.ru/ceny'>Вернуться</a>
-            </div>
-        </div>
-    </div>`)
+        </div>`);
 }
