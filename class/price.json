@@ -1,0 +1,352 @@
+[
+    {
+        "lessonDuration": 30,
+        "teacherType": "ru",
+        "courseType": "std",
+        "pkgs": [
+            {
+                "lessonCount": 5,
+                "price": 3450
+            },
+            {
+                "lessonCount": 10,
+                "price": 5900
+            },
+            {
+                "lessonCount": 15,
+                "price": 8550
+            },
+            {
+                "lessonCount": 30,
+                "price": 14700
+            },
+            {
+                "lessonCount": 60,
+                "price": 23400
+            },
+            {
+                "lessonCount": 90,
+                "price": 32400
+            }
+        ]
+    },
+    {
+        "lessonDuration": 45,
+        "teacherType": "ru",
+        "courseType": "std",
+        "pkgs": [
+            {
+                "lessonCount": 5,
+                "price": 5450,
+                "offer": 3240464
+            },
+            {
+                "lessonCount": 10,
+                "price": 9400,
+                "offer": 3240469
+            },
+            {
+                "lessonCount": 15,
+                "price": 13650,
+                "offer": 3240475
+            },
+            {
+                "lessonCount": 30,
+                "price": 23700,
+                "offer": 3240478
+            },
+            {
+                "lessonCount": 60,
+                "price": 41400,
+                "offer": 3240481
+            },
+            {
+                "lessonCount": 90,
+                "price": 57600,
+                "offer": 3522964
+            }
+        ],
+        "subs": [
+            {
+                "lessonCount": 8,
+                "price": 8160
+            },
+            {
+                "lessonCount": 12,
+                "price": 11880
+            },
+            {
+                "lessonCount": 16,
+                "price": 15520
+            },
+            {
+                "lessonCount": 24,
+                "price": 21360
+            },
+            {
+                "lessonCount": 36,
+                "price": 31320
+            },
+            {
+                "lessonCount": 48,
+                "price": 40800
+            }
+        ]
+    },
+    {
+        "lessonDuration": 60,
+        "teacherType": "ru",
+        "courseType": "std",
+        "pkgs": [
+            {
+                "lessonCount": 5,
+                "price": 5950,
+                "lessonPrice": 1290
+            },
+            {
+                "lessonCount": 10,
+                "price": 10400
+            },
+            {
+                "lessonCount": 15,
+                "price": 15150
+            },
+            {
+                "lessonCount": 30,
+                "price": 26700
+            },
+            {
+                "lessonCount": 60,
+                "price": 47400
+            },
+            {
+                "lessonCount": 90,
+                "price": 66600
+            }
+        ],
+        "subs": [
+            {
+                "lessonCount": 8,
+                "price": 8960
+            },
+            {
+                "lessonCount": 12,
+                "price": 13080
+            },
+            {
+                "lessonCount": 16,
+                "price": 17120
+            },
+            {
+                "lessonCount": 24,
+                "price": 23760
+            },
+            {
+                "lessonCount": 36,
+                "price": 34920
+            },
+            {
+                "lessonCount": 48,
+                "price": 45600
+            }
+        ],
+        "groups": [
+            {
+                "lessonCount": 24,
+                "price": 12000
+            }
+        ]
+    },
+    {
+        "lessonDuration": 60,
+        "teacherType": "ru",
+        "courseType": "bsns",
+        "pkgs": [
+            {
+                "lessonCount": 5,
+                "price": 8925
+            },
+            {
+                "lessonCount": 10,
+                "price": 15600
+            },
+            {
+                "lessonCount": 15,
+                "price": 22725
+            },
+            {
+                "lessonCount": 30,
+                "price": 40050
+            },
+            {
+                "lessonCount": 60,
+                "price": 71100
+            },
+            {
+                "lessonCount": 90,
+                "price": 99900
+            }
+        ]
+    },
+    {
+        "lessonDuration": 90,
+        "teacherType": "ru",
+        "courseType": "std",
+        "pkgs": [
+            {
+                "lessonCount": 5,
+                "price": 9675
+            },
+            {
+                "lessonCount": 10,
+                "price": 17100
+            },
+            {
+                "lessonCount": 15,
+                "price": 24975
+            },
+            {
+                "lessonCount": 30,
+                "price": 44550
+            },
+            {
+                "lessonCount": 60,
+                "price": 80100
+            }
+        ],
+        "subs": [
+            {
+                "lessonCount": 8,
+                "price": 13440
+            },
+            {
+                "lessonCount": 12,
+                "price": 19620
+            },
+            {
+                "lessonCount": 16,
+                "price": 25680
+            },
+            {
+                "lessonCount": 24,
+                "price": 35640
+            },
+            {
+                "lessonCount": 36,
+                "price": 52380
+            },
+            {
+                "lessonCount": 48,
+                "price": 68400
+            }
+        ]
+    },
+    {
+        "lessonDuration": 90,
+        "teacherType": "ru",
+        "courseType": "bsns",
+        "pkgs": [
+            {
+                "lessonCount": 5,
+                "price": 14515
+            },
+            {
+                "lessonCount": 10,
+                "price": 25650
+            },
+            {
+                "lessonCount": 15,
+                "price": 37465
+            },
+            {
+                "lessonCount": 30,
+                "price": 66825
+            },
+            {
+                "lessonCount": 60,
+                "price": 120150
+            }
+        ]
+    },
+    {
+        "lessonDuration": 45,
+        "teacherType": "en",
+        "courseType": "std",
+        "pkgs": [
+            {
+                "lessonCount": 5,
+                "price": 12000
+            },
+            {
+                "lessonCount": 10,
+                "price": 23000
+            },
+            {
+                "lessonCount": 15,
+                "price": 32250
+            },
+            {
+                "lessonCount": 30,
+                "price": 61200
+            },
+            {
+                "lessonCount": 60,
+                "price": 117300
+            }
+        ]
+    },
+    {
+        "lessonDuration": 60,
+        "teacherType": "en",
+        "courseType": "std",
+        "pkgs": [
+            {
+                "lessonCount": 5,
+                "price": 14250
+            },
+            {
+                "lessonCount": 10,
+                "price": 27000
+            },
+            {
+                "lessonCount": 15,
+                "price": 38250
+            },
+            {
+                "lessonCount": 30,
+                "price": 72000
+            },
+            {
+                "lessonCount": 60,
+                "price": 138000
+            }
+        ]
+    },
+    {
+        "lessonDuration": 90,
+        "teacherType": "en",
+        "courseType": "std",
+        "pkgs": [
+            {
+                "lessonCount": 5,
+                "price": 21375
+            },
+            {
+                "lessonCount": 10,
+                "price": 40500
+            },
+            {
+                "lessonCount": 15,
+                "price": 57375
+            },
+            {
+                "lessonCount": 30,
+                "price": 108000
+            },
+            {
+                "lessonCount": 60,
+                "price": 207000
+            }
+        ]
+    }
+]
