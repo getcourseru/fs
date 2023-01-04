@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+.talks-widget-button {
+  display: none;
+}
+
 body {
   background: #f7f7f7;
 }
@@ -12,5 +16,13 @@ body {
   width: 100%;
   height: 100vh;
   min-height: 100vh;
+}
+
+.form-content {
+  background: #ffffff;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 1.5em 2em;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=style.css.map */
