@@ -103,7 +103,7 @@ body {
   color: #ffffff !important;
 }
 
-.notification {
+.nt {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -113,22 +113,22 @@ body {
           justify-content: center;
 }
 
-.notification__container {
+.nt__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 800px;
 }
 
-.notification__image {
+.nt__image {
   width: 300px;
 }
 
-.notification__image img {
+.nt__image img {
   max-width: 100%;
 }
 
-.notification__content {
+.nt__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -141,11 +141,11 @@ body {
           justify-content: center;
 }
 
-.notification__content p {
+.nt__content p {
   margin-bottom: 1em;
 }
 
-.notification__content a {
+.nt__content a {
   width: 50%;
   font-weight: 600;
   padding: 0.5em 1em;
