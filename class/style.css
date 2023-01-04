@@ -139,7 +139,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-size: 1.25em;
+}
+
+.notification__content p {
+  margin-bottom: 1em;
 }
 
 .notification__content a {
