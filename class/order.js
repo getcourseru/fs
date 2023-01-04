@@ -67,10 +67,26 @@ function renderForm(offer) {
 }
 
 
+const notificationTemplate = `
+    <div class='notification'>
+        <div class='notification__container'>
+            <div class='row'>
+            <div class='notification__image'>
+                <img src='https://fs.getcourse.ru/fileservice/file/download/a/13641/sc/341/h/43d1d1bdc86e74ead187f37ae1adf836.png'>
+            </div>
+            <div class='notification__content'>
+                <p>Так-с, кажется, что-то пошло не так...</p>
+                <p>Вернись на шаг назад и попробуй выбрать предложение</p>
+                <a href='https://englishshow.ru/ceny'>Вернуться</a>
+            </div>
+            </div>
+        </div>
+    </div>`;
+
 function hideForm() {
     const $form = document.querySelector('form')
     $form.style.display = 'none'
-	
+
     const $parentForm = $form.parentNode.parentNode
-    $parentForm.insertAdjacentHTML('afterbegin', `<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum architecto voluptate quae deserunt, similique aliquid consectetur magni quisquam dolore libero rerum, in officiis error ipsa pariatur neque, eius eos minus?</p>`)
+    $parentForm.insertAdjacentHTML('afterbegin', notificationTemplate)
 }
