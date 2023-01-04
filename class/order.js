@@ -70,4 +70,7 @@ function renderForm(offer) {
 function hideForm() {
     const $form = document.querySelector('form')
     $form.style.display = 'none'
+	
+    const $parentForm = $form.parentNode.parentNode
+    $parentForm.insertAdjacentHTML('afterbegin', `<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum architecto voluptate quae deserunt, similique aliquid consectetur magni quisquam dolore libero rerum, in officiis error ipsa pariatur neque, eius eos minus?</p>`)
 }
