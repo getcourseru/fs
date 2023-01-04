@@ -4,7 +4,7 @@ parseURL()
 function parseURL() {
     const url = new URL(document.location.href)
     const { pathname, searchParams } = url
-    console.log(pathname)
+    console.log(pathname.split(`/`).includes('editor'))
     
     for (let [name, value] of searchParams) {
         PARAMS[`${name}`] = value
