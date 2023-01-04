@@ -113,13 +113,10 @@ body {
           justify-content: center;
 }
 
-.notification .row {
+.notification__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.notification__container {
   width: 800px;
 }
 
@@ -139,6 +136,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .notification__content p {
@@ -146,10 +146,7 @@ body {
 }
 
 .notification__content a {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  font-size: 1.5em;
+  width: 50%;
   font-weight: 600;
   padding: 0.5em 1em;
   text-decoration: none;
