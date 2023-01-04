@@ -66,9 +66,12 @@ function renderForm(offer) {
     );
 }
 
+function hideForm() {
+    const $form = document.querySelector('form')
+    $form.style.display = 'none'
 
-const notificationTemplate = `
-    <div class='notification'>
+    const $parentForm = $form.parentNode.parentNode
+    $parentForm.insertAdjacentHTML('afterbegin', `<div class='notification'>
         <div class='notification__container'>
             <div class='row'>
             <div class='notification__image'>
@@ -81,12 +84,5 @@ const notificationTemplate = `
             </div>
             </div>
         </div>
-    </div>`;
-
-function hideForm() {
-    const $form = document.querySelector('form')
-    $form.style.display = 'none'
-
-    const $parentForm = $form.parentNode.parentNode
-    $parentForm.insertAdjacentHTML('afterbegin', notificationTemplate)
+    </div>`)
 }
