@@ -43,7 +43,7 @@ function getOffer(data) {
                 $offer.checked = true
                 renderForm(offer)
             } else {
-                console.log(`check offers`)
+                console.log(`check offer IDs`)
             }
         } else {
             showNotification()
