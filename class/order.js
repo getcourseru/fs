@@ -33,7 +33,8 @@ if (lessonDuration && teacherType && packageType && courseType && courseType) {
 
 function getOffer(data) {
     const [offers,] = data.filter(item => item.lessonDuration == PARAMS.lessonDuration && item.teacherType == PARAMS.teacherType && item.courseType == PARAMS.courseType)
-
+    console.log(offers)
+	
     if (offers && offers[`${PARAMS.packageType}`]) {
         const [offer,] = offers[`${PARAMS.packageType}`].filter(item => item.lessonCount == PARAMS.lessonCount)
 
