@@ -100,7 +100,7 @@ function renderCards(items) {
     payLink.searchParams.append('teacherType', inputValues.teacherType)
     payLink.searchParams.append('packageType', inputValues.packageType)
     payLink.searchParams.append('courseType', inputValues.courseType)
-    payLink.searchParams.append('lesssonCount', item.lessonCount)
+    payLink.searchParams.append('lessonCount', item.lessonCount)
 
     const payLinkTitle = inputValues.packageType === `pkgs` ? `пакет` : `абонемент`;
     //
