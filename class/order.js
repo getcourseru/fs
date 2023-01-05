@@ -5,11 +5,11 @@ function parseURL() {
     const url = new URL(document.location.href)
     const { pathname, searchParams } = url
     
-    if (pathname.split(`/`).includes('editor')) {
+    /*if (pathname.split(`/`).includes('editor')) {
     	const $pg = document.querySelector('.lite-page')
-	$pg.innerHTML = ''
-	return
-    }
+        $pg.innerHTML = ''
+        return
+    }*/
     
     for (let [name, value] of searchParams) {
         PARAMS[`${name}`] = value
@@ -21,12 +21,9 @@ function parseURL() {
 const { lessonDuration, teacherType, packageType, courseType, lessonCount } = PARAMS
 
 if (lessonDuration && teacherType && packageType && courseType && courseType) {
-    console.log(PARAMS)
-    
 	fetch(`https://getcourseru.github.io/fs/class/price.json`)
         .then(response => response.json())
         .then(data => getOffer(data))
-    
 } else {
 	showNotification()
 }
@@ -78,7 +75,6 @@ function renderForm(offer) {
 }
 
 function showNotification() {
-
     if (!document.querySelector('form')) {
     	return
     }
