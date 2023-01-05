@@ -37,7 +37,8 @@ function getOffer(data) {
 	
     if (offers && offers[`${PARAMS.packageType}`]) {
         const [offer,] = offers[`${PARAMS.packageType}`].filter(item => item.lessonCount == PARAMS.lessonCount)
-
+	console.log(offer)
+	
         if (document.querySelector(`.form-position-offer-${offer.offer}`)) {
             const $offer = document.querySelector(`.form-position-offer-${offer.offer}`)
             $offer.checked = true
