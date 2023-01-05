@@ -5,16 +5,17 @@ function parseURL() {
     const url = new URL(document.location.href)
     const { pathname, searchParams } = url
     
-    /*if (pathname.split(`/`).includes('editor')) {
+    if (pathname.split(`/`).includes('editor')) {
     	const $pg = document.querySelector('.lite-page')
         $pg.innerHTML = ''
         return
-    }*/
+    }
     
     for (let [name, value] of searchParams) {
         PARAMS[`${name}`] = value
     }
-	
+
+    PARAMS.referrer = document.referrer ? document.referrer : false
     //?lessonDuration=60&teacherType=ru&packageType=pkgs&courseType=std&lessonCount=5
 }
 
@@ -92,7 +93,7 @@ function showNotification() {
                 <div class='nt__content'>
                     <p>Так-с, кажется, что-то пошло не так...</p>
                     <p>Вернись на шаг назад и попробуй выбрать предложение</p>
-                    <a href='https://englishshow.ru/ceny'>Вернуться</a>
+                    <a href='${PARAMS.referrer ? PARAMS.referrer : `https://englishshow.ru/ceny`}'>Вернуться</a>
                 </div>
             </div>
         </div>`);
