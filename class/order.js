@@ -33,20 +33,21 @@ if (lessonDuration && teacherType && packageType && courseType && courseType) {
 
 function getOffer(data) {
     const [offers,] = data.filter(item => item.lessonDuration == PARAMS.lessonDuration && item.teacherType == PARAMS.teacherType && item.courseType == PARAMS.courseType)
-    console.log(offers)
-	
+
     if (offers && offers[`${PARAMS.packageType}`]) {
         const [offer,] = offers[`${PARAMS.packageType}`].filter(item => item.lessonCount == PARAMS.lessonCount)
-	console.log(offer)
-	
-        if (document.querySelector(`.form-position-offer-${offer.offer}`)) {
-            const $offer = document.querySelector(`.form-position-offer-${offer.offer}`)
-            $offer.checked = true
+        
+        if (offer) {
+            if (document.querySelector(`.form-position-offer-${offer.offer}`)) {
+                const $offer = document.querySelector(`.form-position-offer-${offer.offer}`)
+                $offer.checked = true
+                renderForm(offer)
+            } else {
+                console.log(`check offers`)
+            }
         } else {
-            console.log(`check offers`)
+            showNotification()
         }
-
-        renderForm(offer)
     } else {
     	showNotification()
     }
