@@ -35,6 +35,12 @@ body {
   margin-bottom: 0.75em !important;
 }
 
+@media (max-width: 480px) {
+  .prod__title {
+    font-size: 1.75em;
+  }
+}
+
 .prod__desc {
   font-size: 1.125em;
   font-weight: 500;
@@ -52,6 +58,12 @@ body {
   color: #111111;
   margin-bottom: 1em;
   text-align: center;
+}
+
+@media (max-width: 480px) {
+  .price {
+    font-size: 1.75em;
+  }
 }
 
 .price #price {
@@ -147,7 +159,7 @@ body {
 
 .nt__content a {
   width: 50%;
-  font-weight: 500;
+  font-weight: 600;
   padding: 0.5em 1em;
   text-align: center;
   text-decoration: none;
