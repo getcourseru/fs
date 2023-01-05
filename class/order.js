@@ -5,11 +5,11 @@ function parseURL() {
     const url = new URL(document.location.href)
     const { pathname, searchParams } = url
     
-    /*if (pathname.split(`/`).includes('editor')) {
+    if (pathname.split(`/`).includes('editor')) {
     	const $pg = document.querySelector('.lite-page')
         $pg.innerHTML = ''
         return
-    }*/
+    }
     
     for (let [name, value] of searchParams) {
         PARAMS[`${name}`] = value
@@ -39,6 +39,7 @@ function getOffer(data) {
             if (document.querySelector(`.form-position-offer-${offer.offer}`)) {
                 const $offer = document.querySelector(`.form-position-offer-${offer.offer}`)
                 $offer.checked = true
+		addPlaceholder()
                 renderForm(offer)
             } else {
                 console.log(`check offer IDs`)
@@ -97,4 +98,13 @@ function showNotification() {
                 </div>
             </div>
         </div>`);
+}
+
+function addPlaceholder() {
+    const [nameInput, ] = document.getElementsByName('formParams[full_name]');
+    nameInput.placeholder = `Имя`;
+    const [emailInput, ] = document.getElementsByName('formParams[email]');
+    emailInput.placeholder = `Email`;
+    const [phoneInput, ] = document.getElementsByName('formParams[phone]');
+    phoneInput.placeholder = `Телефон`;
 }
