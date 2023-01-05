@@ -42,12 +42,12 @@ function getOffer(data) {
             } else {
                 console.log(`check offer IDs`)
             }
-        } else {
-            showNotification()
+
+            return
         }
-    } else {
-    	showNotification()
     }
+
+    showNotification()
 }
 
 function renderForm(offer) {
