@@ -7,6 +7,7 @@
             {
                 "lessonCount": 5,
                 "price": 3450,
+                "lessonPrice": 790,
                 "offer": 3522984
             },
             {
@@ -44,6 +45,7 @@
             {
                 "lessonCount": 5,
                 "price": 5450,
+                "lessonPrice": 1190,
                 "offer": 3240464
             },
             {
@@ -227,6 +229,7 @@
             {
                 "lessonCount": 5,
                 "price": 9675,
+                "lessonPrice": 2100,
                 "offer": 3240495
             },
             {
