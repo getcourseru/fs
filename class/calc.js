@@ -12,7 +12,6 @@ function getInputValues() {
 
 $options.addEventListener('click', (e) => {
   if (e.target.tagName === 'INPUT') {
-    getPrices(PRICES)
     const a = getPrices(PRICES)
     const b = calcCardValues(a)
     renderCards(b)
