@@ -90,7 +90,7 @@ function renderCards(items) {
     
     //
     const lessonTitle = item.lessonCount === 24 ? `урока` : `уроков`;
-    const typeTitle = inputValues.type === `pkgs` 
+    const typeTitle = inputValues.packageType === `pkgs` 
       ? `пакет` 
       :  item.lessonCount < 24 ? `абонемент на 1 месяц` : `абонемент на 3 месяца`
 
