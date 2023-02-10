@@ -25,10 +25,10 @@ function parseURL() {
     return params
 }
 
-const { alias } = PARAMS
+const { alias, folder } = PARAMS
 
 if (alias) {
-    fetch('https://getcourseru.github.io/fs/bk/prc.json')
+    fetch(`https://getcourseru.github.io/fs/${folder}/prc.json`)
         .then(response => response.json())
         .then(data => getOffer(data))
 } else {
