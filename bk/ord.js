@@ -38,17 +38,20 @@ if (alias) {
 function getOffer(data) {
     const [product,] = data.filter(item => item.alias == PARAMS.alias)
 
+    console.log(product)
     if (product) {
         const { offer } = product
+	addPlaceholder()
+            renderForm(product)
 
-        if (document.querySelector(`.form-position-offer-${offer}`)) {
+        /*if (document.querySelector(`.form-position-offer-${offer}`)) {
             const $offer = document.querySelector(`.form-position-offer-${offer.offer}`)
             $offer.checked = true
             addPlaceholder()
             renderForm(product)
         } else {
             console.log(`check offer IDs`)
-        }  
+        } */ 
     }
 }
 
