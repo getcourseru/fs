@@ -49,17 +49,16 @@ function getOffer(data) {
 }
 
 function renderForm(product) {
-    const { title, period, price } = product
+    const { title, price } = product
 
     const $container = document.querySelector('.form-content .builder');
     const $btn = $container.querySelector('.f-btn');
 
     $container.insertAdjacentHTML('afterbegin', 
         `<div class='prod'>
-            <p class='prod__title'>Native Show</p>
+            <p class='prod__title'>Книги Инглиш Шоу</p>
             <div class='prod__desc'>
-                <p>Тариф: ${title}</p>
-                <p>Период: ${period}</p>
+                <p>Название: ${title}</p>
             <div>
         </div>`);
 
