@@ -24,7 +24,7 @@ function parseURL() {
 const { alias } = PARAMS
 
 if (alias) {
-    fetch('url')
+    fetch('https://getcourseru.github.io/fs/bk/prc.json')
         .then(response => response.json())
         .then(data => renderForm(data))
 } else {
