@@ -28,7 +28,7 @@ if (alias) {
         .then(response => response.json())
         .then(data => renderForm(data))
 } else {
-    //showNotification()
+    showNotification()
 }
 
 function getOffer(data) {
