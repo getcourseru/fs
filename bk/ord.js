@@ -24,7 +24,7 @@ function parseURL() {
     if (!params.alias) {
     	params.alias = params.pathname[i + 2]
     }
-    console.log(params.alias)
+    console.log(`alias = ${params.alias}`)
 	
     params.referrer = document.referrer ? document.referrer : false
 
