@@ -16,6 +16,10 @@ function parseURL() {
     for (let [name, value] of searchParams) {
         params[`${name}`] = value
     }
+    params.folder = pathname.split('/')
+    params.folder = params.folder[params.folder.length - 1]
+    console.log(params.folder)
+	
     params.referrer = document.referrer ? document.referrer : false
 
     return params
