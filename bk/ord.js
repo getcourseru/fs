@@ -63,10 +63,7 @@ function renderForm(product) {
 
     $container.insertAdjacentHTML('afterbegin', 
         `<div class='prod'>
-            <p class='prod__title'>Книги Инглиш Шоу</p>
-            <div class='prod__desc'>
-                <p>Название: ${title}</p>
-            <div>
+            <p class='prod__title'>${title}</p>
         </div>`);
 
     $btn.innerText = 'Оплатить';
