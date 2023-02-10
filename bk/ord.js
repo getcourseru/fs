@@ -30,7 +30,7 @@ const { alias } = PARAMS
 if (alias) {
     fetch('https://getcourseru.github.io/fs/bk/prc.json')
         .then(response => response.json())
-        .then(data => renderForm(data))
+        .then(data => getOffer(data))
 } else {
     showNotification()
 }
