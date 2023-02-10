@@ -7,11 +7,11 @@ function parseURL() {
     const url = new URL(document.location.href)
     const { pathname, searchParams } = url
     
-    if (pathname.split(`/`).includes('editor')) {
+    /*if (pathname.split(`/`).includes('editor')) {
     	const $pg = document.querySelector('.lite-page')
         $pg.innerHTML = ''
         return
-    }
+    }*/
     
     for (let [name, value] of searchParams) {
         params[`${name}`] = value
