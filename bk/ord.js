@@ -16,10 +16,8 @@ function parseURL() {
     for (let [name, value] of searchParams) {
         params[`${name}`] = value
     }
-    params.folder = pathname.split('/')
-    params.folder = params.folder[params.folder.length - 1]
-    console.log(params.folder)
-	
+    const path = pathname.split('/')
+    params.folder = path[path.length - 1]
     params.referrer = document.referrer ? document.referrer : false
 
     return params
@@ -38,11 +36,10 @@ if (alias) {
 function getOffer(data) {
     const [product,] = data.filter(item => item.alias == PARAMS.alias)
 
-    console.log(product)
     if (product) {
         const { offer } = product
 	addPlaceholder()
-            renderForm(product)
+        renderForm(product)
 
         /*if (document.querySelector(`.form-position-offer-${offer}`)) {
             const $offer = document.querySelector(`.form-position-offer-${offer.offer}`)
