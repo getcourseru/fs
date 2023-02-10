@@ -7,7 +7,8 @@ function parseURL() {
     const url = new URL(document.location.href)
     const { pathname, searchParams } = url
     
-    /*if (pathname.split(`/`).includes('editor')) {
+    params.pathname = pathname.split('/')
+    /*if (params.pathname.includes('editor')) {
     	const $pg = document.querySelector('.lite-page')
         $pg.innerHTML = ''
         return
@@ -17,14 +18,11 @@ function parseURL() {
         params[`${name}`] = value
     }
 	
-    params.pathname = pathname.split('/')
     const i = params.pathname.indexOf('ord')
     params.folder = params.pathname[i + 1]
-    
     if (!params.alias) {
     	params.alias = params.pathname[i + 2]
     }
-    console.log(`alias = ${params.alias}`)
 	
     params.referrer = document.referrer ? document.referrer : false
 
@@ -46,13 +44,11 @@ function getOffer(data) {
 
     if (product) {
         const { offer } = product
-	addPlaceholder()
         renderForm(product)
 
         /*if (document.querySelector(`.form-position-offer-${offer}`)) {
             const $offer = document.querySelector(`.form-position-offer-${offer.offer}`)
             $offer.checked = true
-            addPlaceholder()
             renderForm(product)
         } else {
             console.log(`check offer IDs`)
@@ -62,9 +58,12 @@ function getOffer(data) {
 
 function renderForm(product) {
     const { title, price } = product
-
     const $container = document.querySelector('.form-content .builder');
     const $btn = $container.querySelector('.f-btn');
+
+    /*if (folder === 'bk') {
+    
+    }*/
 
     $container.insertAdjacentHTML('afterbegin', 
         `<div class='prod'>
@@ -77,6 +76,8 @@ function renderForm(product) {
             <div class='price__text'>К оплате:<span id='price'>${price}</span>₽</div>
         </div>`
     );
+	
+    addPlaceholder()
 }
 
 function showNotification() {
@@ -97,7 +98,7 @@ function showNotification() {
                 <div class='nt__content'>
                     <p>Так-с, кажется, что-то пошло не так...</p>
                     <p>Вернись на шаг назад и попробуй выбрать предложение</p>
-                    <a href='${PARAMS.referrer ? PARAMS.referrer : `https://englishshow.ru/ceny`}'>Вернуться</a>
+                    <a href='${PARAMS.referrer ? PARAMS.referrer : `https://englishshow.ru/knigi`}'>Вернуться</a>
                 </div>
             </div>
         </div>`);
