@@ -46,7 +46,7 @@ function getOffer(data) {
         const { offer } = product
 
         if (document.querySelector(`.form-position-offer-${offer}`)) {
-            const $offer = document.querySelector(`.form-position-offer-${offer.offer}`)
+            const $offer = document.querySelector(`.form-position-offer-${offer}`)
             $offer.checked = true
             renderForm(product)
         } else {
