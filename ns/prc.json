@@ -1,0 +1,44 @@
+[
+    {
+        "alias": "chatsovsemi-1",
+        "title": "#чатсовсеми",
+        "period": "1 месяц",
+        "price": 3900,
+        "offer": 1206935
+    },
+    {
+        "alias": "chatsovsemi-3",
+        "title": "#чатсовсеми",
+        "period": "3 месяца",
+        "price": 6900,
+        "offer": 1206940
+    },
+    {
+        "alias": "chatsovsemi-6",
+        "title": "#чатсовсеми",
+        "period": "6 месяцев",
+        "price": 10900,
+        "offer": 1206943
+    },
+    {
+        "alias": "chatsovsemi-12",
+        "title": "#чатсовсеми",
+        "period": "12 месяцев",
+        "price": 14900,
+        "offer": 1206945
+    },
+    {
+        "alias": "navsegda",
+        "title": "#чатсовсеми",
+        "period": "∞",
+        "price": 14900,
+        "offer": 2916542
+    },
+    {
+        "alias": "nanedelyu",
+        "title": "#чатсовсеми",
+        "period": "7 дней",
+        "price": 990,
+        "offer": 3780011
+    }
+]
