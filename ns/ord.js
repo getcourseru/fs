@@ -7,28 +7,36 @@ function parseURL() {
     const url = new URL(document.location.href)
     const { pathname, searchParams } = url
     
-    if (pathname.split(`/`).includes('editor')) {
+    params.pathname = pathname.split('/')
+    /*if (params.pathname.includes('editor')) {
     	const $pg = document.querySelector('.lite-page')
         $pg.innerHTML = ''
         return
-    }
+    }*/
     
     for (let [name, value] of searchParams) {
         params[`${name}`] = value
     }
+	
+    const i = params.pathname.indexOf('ord')
+    params.folder = params.pathname[i + 1]
+    if (!params.alias) {
+    	params.alias = params.pathname[i + 2]
+    }
+	
     params.referrer = document.referrer ? document.referrer : false
 
     return params
 }
 
-const { alias } = PARAMS
+const { alias, folder } = PARAMS
 
 if (alias) {
-    fetch('url')
+    fetch(`https://getcourseru.github.io/fs/${folder}/prc.json`)
         .then(response => response.json())
-        .then(data => renderForm(data))
+        .then(data => getOffer(data))
 } else {
-    //showNotification()
+    showNotification()
 }
 
 function getOffer(data) {
@@ -36,31 +44,34 @@ function getOffer(data) {
 
     if (product) {
         const { offer } = product
+        renderForm(product)
 
-        if (document.querySelector(`.form-position-offer-${offer}`)) {
+        /*if (document.querySelector(`.form-position-offer-${offer}`)) {
             const $offer = document.querySelector(`.form-position-offer-${offer.offer}`)
             $offer.checked = true
-            addPlaceholder()
             renderForm(product)
         } else {
             console.log(`check offer IDs`)
-        }  
+        } */ 
     }
 }
 
 function renderForm(product) {
     const { title, period, price } = product
-
     const $container = document.querySelector('.form-content .builder');
     const $btn = $container.querySelector('.f-btn');
+
+    /*if (folder === 'bk') {
+    
+    }*/
 
     $container.insertAdjacentHTML('afterbegin', 
         `<div class='prod'>
             <p class='prod__title'>Native Show</p>
-            <div class='prod__desc'>
-                <p>Тариф: ${title}</p>
-                <p>Период: ${period}</p>
-            <div>
+	    <div class='prod__desc'>
+	    	<p>Тариф: ${title}</p>
+		<p>Продолжительность: ${period}</p>
+	    </div>
         </div>`);
 
     $btn.innerText = 'Оплатить';
@@ -69,6 +80,8 @@ function renderForm(product) {
             <div class='price__text'>К оплате:<span id='price'>${price}</span>₽</div>
         </div>`
     );
+	
+    addPlaceholder()
 }
 
 function showNotification() {
@@ -89,7 +102,7 @@ function showNotification() {
                 <div class='nt__content'>
                     <p>Так-с, кажется, что-то пошло не так...</p>
                     <p>Вернись на шаг назад и попробуй выбрать предложение</p>
-                    <a href='${PARAMS.referrer ? PARAMS.referrer : `https://englishshow.ru/ceny`}'>Вернуться</a>
+                    <a href='${PARAMS.referrer ? PARAMS.referrer : `https://englishshow.ru/knigi`}'>Вернуться</a>
                 </div>
             </div>
         </div>`);
