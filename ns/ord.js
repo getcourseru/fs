@@ -44,16 +44,19 @@ function getOffer(data) {
 
     if (product) {
         const { offer } = product
-        renderForm(product)
 
-        /*if (document.querySelector(`.form-position-offer-${offer}`)) {
+        if (document.querySelector(`.form-position-offer-${offer}`)) {
             const $offer = document.querySelector(`.form-position-offer-${offer.offer}`)
             $offer.checked = true
             renderForm(product)
         } else {
             console.log(`check offer IDs`)
-        } */ 
+        }
+	   
+	return
     }
+	
+    showNotification()
 }
 
 function renderForm(product) {
