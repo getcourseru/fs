@@ -61,10 +61,6 @@ function renderForm(product) {
     const $container = document.querySelector('.form-content .builder');
     const $btn = $container.querySelector('.f-btn');
 
-    /*if (folder === 'bk') {
-    
-    }*/
-
     $container.insertAdjacentHTML('afterbegin', 
         `<div class='prod'>
             <p class='prod__title'>${title}</p>
