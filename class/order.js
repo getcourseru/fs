@@ -39,7 +39,6 @@ function getOffer(data) {
             if (document.querySelector(`.form-position-offer-${offer.offer}`)) {
                 const $offer = document.querySelector(`.form-position-offer-${offer.offer}`)
                 $offer.checked = true
-		addPlaceholder()
                 renderForm(offer)
             } else {
                 console.log(`check offer IDs`)
@@ -53,7 +52,7 @@ function getOffer(data) {
 }
 
 function renderForm(offer) {
-	const $container = document.querySelector('.form-content .builder');
+    const $container = document.querySelector('.form-content .builder');
     const $btn = $container.querySelector('.f-btn');
 
 	$container.insertAdjacentHTML('afterbegin', 
@@ -74,6 +73,8 @@ function renderForm(offer) {
             <div class='price__text'>К оплате:<span id='price'>${offer.price}</span>₽</div>
         </div>`
     );
+	
+    addPlaceholder($container)
 }
 
 function showNotification() {
@@ -100,11 +101,11 @@ function showNotification() {
         </div>`);
 }
 
-function addPlaceholder() {
-    const [nameInput,] = document.getElementsByName('formParams[full_name]');
+function addPlaceholder(form) {
+    const [nameInput,] = form.getElementsByName('formParams[full_name]');
     nameInput.placeholder = `Имя`;
-    const [emailInput,] = document.getElementsByName('formParams[email]');
+    const [emailInput,] = form.getElementsByName('formParams[email]');
     emailInput.placeholder = `Email`;
-    const [phoneInput,] = document.getElementsByName('formParams[phone]');
+    const [phoneInput,] = form.getElementsByName('formParams[phone]');
     phoneInput.placeholder = `Телефон`;
 }
