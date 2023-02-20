@@ -33,7 +33,7 @@
     },
     {
         "alias": "navsegda",
-        "tariff": "#чатсовсеми",
+        "tariff": "#навсегда",
         "period": "∞",
         "price": 14900,
         "offer": 2916542,
@@ -41,7 +41,7 @@
     },
     {
         "alias": "nanedelyu",
-        "tariff": "#чатсовсеми",
+        "tariff": "#нанеделю",
         "period": "7 дней",
         "price": 990,
         "offer": 3780011
