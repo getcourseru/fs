@@ -44,34 +44,34 @@
         "pkgs": [
             {
                 "lessonCount": 5,
-                "price": 5450,
-                "lessonPrice": 1190,
-                "offer": 3240464
+                "price": 7450,
+                "lessonPrice": 1590,
+                "offer": 4300960
             },
             {
                 "lessonCount": 10,
-                "price": 9400,
-                "offer": 3240469
+                "price": 12900,
+                "offer": 4300962
             },
             {
                 "lessonCount": 15,
-                "price": 13650,
-                "offer": 3240475
+                "price": 17850,
+                "offer": 4300964
             },
             {
                 "lessonCount": 30,
-                "price": 23700,
-                "offer": 3240478
+                "price": 31200,
+                "offer": 4300965
             },
             {
                 "lessonCount": 60,
-                "price": 41400,
-                "offer": 3240481
+                "price": 56400,
+                "offer": 4300967
             },
             {
                 "lessonCount": 90,
-                "price": 57600,
-                "offer": 3522964
+                "price": 75600,
+                "offer": 4300970
             }
         ],
         "subs": [
