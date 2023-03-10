@@ -191,32 +191,32 @@
         "pkgs": [
             {
                 "lessonCount": 5,
-                "price": 8925,
+                "price": 11925,
                 "offer": 4113320
             },
             {
                 "lessonCount": 10,
-                "price": 15600,
+                "price": 20850,
                 "offer": 4113322
             },
             {
                 "lessonCount": 15,
-                "price": 22725,
+                "price": 29025,
                 "offer": 4113323
             },
             {
                 "lessonCount": 30,
-                "price": 40050,
+                "price": 51300,
                 "offer": 4113324
             },
             {
                 "lessonCount": 60,
-                "price": 71100,
+                "price": 93600,
                 "offer": 4113325
             },
             {
                 "lessonCount": 90,
-                "price": 99900,
+                "price": 126900,
                 "offer": 4113327
             }
         ]
@@ -298,28 +298,33 @@
         "pkgs": [
             {
                 "lessonCount": 5,
-                "price": 14515,
+                "price": 19000,
                 "offer": 4113332
             },
             {
                 "lessonCount": 10,
-                "price": 25650,
+                "price": 33525,
                 "offer": 4113335
             },
             {
                 "lessonCount": 15,
-                "price": 37465,
+                "price": 31275,
                 "offer": 4113336
             },
             {
                 "lessonCount": 30,
-                "price": 66825,
+                "price": 46915,
                 "offer": 4113337
             },
             {
                 "lessonCount": 60,
-                "price": 120150,
+                "price": 153900,
                 "offer": 4113338
+            },
+            {
+                "lessonCount": 90,
+                "price": 252720,
+                "offer": 0
             }
         ]
     },
