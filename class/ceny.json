@@ -77,33 +77,8 @@
         "subs": [
             {
                 "lessonCount": 8,
-                "price": 8160,
+                "price": 9520,
                 "offer": 3267096
-            },
-            {
-                "lessonCount": 12,
-                "price": 11880,
-                "offer": 3267101
-            },
-            {
-                "lessonCount": 16,
-                "price": 15520,
-                "offer": 3267102
-            },
-            {
-                "lessonCount": 24,
-                "price": 21360,
-                "offer": 3267104
-            },
-            {
-                "lessonCount": 36,
-                "price": 31320,
-                "offer": 3267106
-            },
-            {
-                "lessonCount": 48,
-                "price": 40800,
-                "offer": 3267107
             }
         ]
     },
@@ -147,33 +122,8 @@
         "subs": [
             {
                 "lessonCount": 8,
-                "price": 8960,
+                "price": 10320,
                 "offer": 3267125
-            },
-            {
-                "lessonCount": 12,
-                "price": 13080,
-                "offer": 3267129
-            },
-            {
-                "lessonCount": 16,
-                "price": 17120,
-                "offer": 3267131
-            },
-            {
-                "lessonCount": 24,
-                "price": 23760,
-                "offer": 3267144
-            },
-            {
-                "lessonCount": 36,
-                "price": 34920,
-                "offer": 3267146
-            },
-            {
-                "lessonCount": 48,
-                "price": 45600,
-                "offer": 3267147
             }
         ],
         "groups": [
